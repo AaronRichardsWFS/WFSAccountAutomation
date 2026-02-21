@@ -4,7 +4,7 @@ CREATE TABLE Users (
   LastName VARCHAR(100) NOT NULL,
   Type VARCHAR(50) NOT NULL,
   Status VARCHAR(50) NOT NULL,
-  VPN VARCHAR(100),
+  VPN BIT NOT NULL DEFAULT 0, -- A user does not have VPN access by default
   ADUsername VARCHAR(100),
   DateCreated DATETIME NOT NULL DEFAULT GETDATE(),
   DateLastModified DATETIME NOT NULL DEFAULT GETDATE(),
