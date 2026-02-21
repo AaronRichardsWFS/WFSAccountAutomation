@@ -19,7 +19,8 @@ WFS Account Automation Scripts
    ```
 
 4. Run the following command to verify the table was created.
-   You should see the Users table in the results.
+   You should see the `Users` table and
+   the `trg_UpdateDateLastModified` trigger in the results.
 
    ```sqlcmd
    :r ./db/read.sql
@@ -27,7 +28,7 @@ WFS Account Automation Scripts
 
 ## Utility SQL Scripts
 
-### Drop Users Table
+### Drop Users Table and Trigger
 
 ```sqlcmd
 :r ./db/drop.sql
